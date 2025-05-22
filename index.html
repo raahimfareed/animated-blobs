@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Blobs</title>
+</head>
+<body style="margin:0; background:#f9f9f7; font-family:sans-serif; padding:40px;">
+
+<h2 style="text-align:center;">Our Portfolio</h2>
+<p style="text-align:center; max-width:700px; margin:10px auto 40px; color:#444;">
+  We invest in visionary entrepreneurs who are redefining the telecom and fintech landscapes. Our portfolio reflects a commitment to early-stage companies that drive meaningful change in global connectivity.
+</p>
+
+<div style="display:flex; justify-content:center; gap:40px; flex-wrap:wrap;">
+
+  <!-- Telgea Blob -->
+  <div style="
+    width:100%; max-width:500px; aspect-ratio:3/2;
+    position:relative;
+    clip-path:url(#telgeaClip); -webkit-clip-path:url(#telgeaClip);
+    overflow:hidden;
+    flex: 1 1 300px;
+  ">
+    <img src="./telgea-founders.jpg" alt="Telgea" style="
+      width:100%; height:100%;
+      object-fit:cover;
+      filter:grayscale(100%);
+      position:absolute; top:0; left:0;
+    ">
+    <div style="
+      background-color: rgba(255, 94, 62, 0.33);
+      position:absolute; top:0; left:0; width:100%; height:100%;
+      transition: background-color 0.3s ease-in;
+    " 
+    onmouseover="this.style.backgroundColor='rgba(255,94,62,0.66)';" 
+    onmouseout="this.style.backgroundColor='rgba(255,94,62,0.33)';">
+    </div>
+    <div style="
+      position:absolute;
+      top:50%; left:50%;
+      transform:translate(-50%, -50%);
+      width:50%;
+      text-align:center;
+    ">
+      <svg viewBox="0 0 100 20" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="10" cy="10" r="6" fill="white"/>
+        <text x="20" y="15" font-size="15" fill="white">Telgea</text>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Glide Identity Blob -->
+  <div style="
+    width:100%; max-width:500px; aspect-ratio:3/2;
+    position:relative;
+    clip-path:url(#glideClip); -webkit-clip-path:url(#glideClip);
+    overflow:hidden;
+    flex: 1 1 300px;
+  ">
+    <img src="./glide-founder.jpg" alt="Glide identity" style="
+      width:100%; height:100%;
+      object-fit:cover;
+      filter:grayscale(100%);
+      position:absolute; top:0; left:0;
+    ">
+    <div style="
+      background-color: rgba(255, 94, 62, 0.33);
+      position:absolute; top:0; left:0; width:100%; height:100%;
+      transition: background-color 0.3s ease-in;
+    " 
+    onmouseover="this.style.backgroundColor='rgba(255,94,62,0.66)';" 
+    onmouseout="this.style.backgroundColor='rgba(255,94,62,0.33)';">
+    </div>
+    <div style="
+      position:absolute;
+      top:50%; left:50%;
+      transform:translate(-50%, -50%);
+      width:60%;
+      text-align:center;
+    ">
+      <svg viewBox="0 0 100 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10,10 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0" fill="white"/>
+        <text x="25" y="15" font-size="15" fill="white">Glide identity</text>
+      </svg>
+    </div>
+  </div>
+
+</div>
+
+<!-- SVG Blob Shapes (Static) -->
+<svg width="0" height="0">
+  <defs>
+    <clipPath id="telgeaClip" clipPathUnits="objectBoundingBox">
+      <path d="M0.05,0.2 C0.2,0.05,0.8,0,0.95,0.2 C1,0.3,0.98,0.7,0.9,0.8 C0.8,0.95,0.2,0.95,0.1,0.8 C0.02,0.7,0,0.3,0.05,0.2 Z"/>
+    </clipPath>
+    <clipPath id="glideClip" clipPathUnits="objectBoundingBox">
+      <path d="M0.1,0.3 C0.25,0.1,0.75,0.05,0.9,0.2 C1,0.35,0.95,0.7,0.8,0.85 C0.65,1,0.3,1,0.15,0.85 C0.02,0.7,0,0.4,0.1,0.3 Z"/>
+    </clipPath>
+  </defs>
+</svg>
+
+</body>
+</html>
